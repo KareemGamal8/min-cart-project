@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="MiniCart is a beginner-friendly JavaScript shopping cart project."
+    />
+
+    <title>MiniCart | Simple Shopping Cart</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="preconnect" href="https://images.unsplash.com" />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header class="site-header border-bottom">
+      <nav
+        class="d-flex justify-content-between container py-3"
+        aria-label="Main navigation"
+      >
+        <a class="navbar-brand fw-bold text-primary fs-3" href="#products"
+          >MiniCart</a
+        >
+
+        <a class="cart-link" href="#cart" aria-label="Go to shopping cart">
+          Cart
+          <span id="cart-count" class="badge rounded-pill text-bg-primary"
+            >0</span
+          >
+        </a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="products" class="py-5">
+        <div class="container">
+          <div class="section-title mb-4">
+            <p class="text-primary fw-semibold mb-1">Browse the collection</p>
+
+            <h1>Our Products</h1>
+
+            <p class="text-muted mb-0">
+              Choose something you like and add it to your cart.
+            </p>
+          </div>
+
+          <div id="products-list" class="row g-4"></div>
+        </div>
+      </section>
+
+      <section id="cart" class="cart-section py-5">
+        <div class="container">
+          <div class="section-title mb-4">
+            <p class="text-primary fw-semibold mb-1">Your order</p>
+
+            <h2>Shopping Cart</h2>
+          </div>
+
+          <div class="cart-card p-3 p-md-4">
+            <div id="cart-items"></div>
+
+            <div
+              class="cart-total d-flex justify-content-between align-items-center mt-3 pt-3"
+            >
+              <span>Total</span>
+              <span id="cart-total">$0.00</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="py-4 text-center text-muted small">
+      <div class="container">
+        MiniCart — a simple JavaScript learning project.
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>
